@@ -1,6 +1,10 @@
 {
   "variants": {
-    "state=1": { "model": "qsrehydrated:block/quicksand"},
-    "state=2": { "model": "qsrehydrated:block/quicksand_disturbed"}
+    "state=1": {
+      "model": "qsrehydrated:block/quicksand"
+    },
+    "state=2": {
+      "model": "qsrehydrated:block/quicksand_disturbed"
+    }
   }
 }

@@ -58,7 +58,6 @@ public class ModBlocks {
             .noOcclusion().isViewBlocking((A, B, C) -> A.getValue(FlowingQuicksandBase.LEVEL) >= 4).forceSolidOn();
     private final static BlockBehaviour.Properties slimeBehavior = BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK).noCollission()
             .noOcclusion().isViewBlocking((A, B, C) -> true).friction(1.0F).strength(2.5F).forceSolidOn();
-
     private final static BlockBehaviour.Properties woolBehavior = BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).noCollission()
             .noOcclusion().isViewBlocking((A, B, C) -> true).friction(1.0F).strength(2.5F).forceSolidOn();
 
@@ -107,6 +106,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SHALLOW_MUD = registerBlock("shallow_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 0.5d));
     public static final RegistryObject<Block> DEEP_MUD = registerBlock("deep_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 1.0d));
     public static final RegistryObject<Block> BOTTOMLESS_MUD = registerBlock("bottomless_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 2.5d));
+    public static final RegistryObject<Block> TAR = registerBlock("tar", () -> new TarBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 3.0d));
 
 
     public static final RegistryObject<Block> SOFT_QUICKSAND = registerBlock("soft_quicksand", () -> new FlowingQuicksandBase(baseFlowingBehavior, new QuicksandBehavior()));
@@ -221,6 +221,7 @@ public class ModBlocks {
         addItem(SHALLOW_MUD);
         addItem(DEEP_MUD);
         addItem(BOTTOMLESS_MUD);
+        addItem(TAR);
 
         addItem(SOFT_QUICKSAND);
 
