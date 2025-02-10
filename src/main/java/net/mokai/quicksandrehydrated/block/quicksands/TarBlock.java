@@ -64,7 +64,7 @@ public class TarBlock extends QuicksandBase {
     }
 
     public boolean canStepOut(double depth) {
-        return depth < 0.1d;
+        return depth < 0.125d;
     }
 
     private double interpolateAfterKnee(double depth, double a, double b) {
@@ -92,11 +92,6 @@ public class TarBlock extends QuicksandBase {
     
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return NORMAL_SHAPE;
-    }
-
-    @Override
-    public VoxelShape getCollisionShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
         return NORMAL_SHAPE;
     }
 
