@@ -5,7 +5,7 @@ I just wanted to add some qs types mine and my friends wanted, I don't code in j
 What does this fork add currently?
 ====
 - Tar (implemented)
-- Melted Cheese (todo)
+- Melted Cheese (implemented)
 - Dark Latex (todo)
 - Light Latex (todo)
 - Grain (todo)
@@ -17,7 +17,13 @@ Again, this is a modification for me and my friends! I don't expect any progress
 
 Current bugs in this fork:
 ====
-- When tar is connected to itself, I'm not sure how to make the block extend down 1px. (Suggestions welcome!)
+- When 16x15x16 blocks (blocks that are shorter) are connected to themselves, I'm not sure how to make the block extend down 1px. (Suggestions welcome!)
+
+This fork's todo:
+====
+- All the blocks listed as todo (should be pretty easy, just need some time)
+- make some blocks like tar and melted cheese flow
+- Fix the 16x15x16 block bug
 
 Quicksand-Rehydrated
 ====
