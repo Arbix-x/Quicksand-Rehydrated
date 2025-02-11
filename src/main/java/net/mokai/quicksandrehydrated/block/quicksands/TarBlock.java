@@ -199,11 +199,11 @@ public class TarBlock extends QuicksandBase {
     public void struggleAttempt(@NotNull BlockState pState, @NotNull Entity pEntity, double struggleAmount) {
 
         double min = 0.0;
-        struggleAmount *= 0.15;
+        struggleAmount *= 0.06;
         double struggleForce = min+struggleAmount;
 
         Random rng = new Random();
-        double rngVal = rng.nextDouble(0.5, 1.0);
+        double rngVal = rng.nextDouble(0.1, 0.4);
         struggleForce *= rngVal;
 
         pEntity.addDeltaMovement(new Vec3(0.0, struggleForce, 0.0));
@@ -217,7 +217,7 @@ public class TarBlock extends QuicksandBase {
 
 
 
-    public static final Vector3f MUD_COLOR = Vec3.fromRGB24(4666151).toVector3f();
+    public static final Vector3f MUD_COLOR = Vec3.fromRGB24(2565927).toVector3f();
 
     // normal block things v
 
@@ -251,7 +251,7 @@ public class TarBlock extends QuicksandBase {
         double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double) direction.getStepZ() : (double) randomsource.nextFloat();
 //        pLevel.addParticle(???, d1, d2, d3, 0.0D, 0.0, 0.0D);
 
-        Vector3f MUD_COLOOR = Vec3.fromRGB24(4666151).toVector3f();
+        Vector3f MUD_COLOOR = Vec3.fromRGB24(2565927).toVector3f();
         pLevel.addParticle(new DustParticleOptions(MUD_COLOOR, 1.0F), (double) pPos.getX() + d1, (double) pPos.getY() + d2, (double) pPos.getZ() + d3, 0.0D, 0.0D, 0.0D);
 
 

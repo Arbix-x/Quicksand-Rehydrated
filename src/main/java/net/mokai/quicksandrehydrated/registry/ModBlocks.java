@@ -102,11 +102,17 @@ public class ModBlocks {
             .setWalkSpeed(new DepthCurve(new double[]{0.9, 0.55, 0.15, 0.1, 0.0}))
             .setSinkSpeed(0);
 
+
+    static QuicksandBehavior tarSinkable = new QuicksandBehavior()
+            .setVertSpeed(0.5)
+            .setWalkSpeed(new DepthCurve(new double[]{1.0, 0.8, 0.75, 0.35, 0.2, 0.0}))
+            .setSinkSpeed(0.00035);
+            
     public static final RegistryObject<Block> THIN_MUD = registerBlock("thin_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 0.2d));
     public static final RegistryObject<Block> SHALLOW_MUD = registerBlock("shallow_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 0.5d));
     public static final RegistryObject<Block> DEEP_MUD = registerBlock("deep_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 1.0d));
     public static final RegistryObject<Block> BOTTOMLESS_MUD = registerBlock("bottomless_mud", () -> new DeepMudBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 2.5d));
-    public static final RegistryObject<Block> TAR = registerBlock("tar", () -> new TarBlock( muddyBehavior.sound(SoundType.MUD), mudSinkable, 3.0d));
+    public static final RegistryObject<Block> TAR = registerBlock("tar", () -> new TarBlock( muddyBehavior.sound(SoundType.MUD), tarSinkable, 3.0d));
 
 
     public static final RegistryObject<Block> SOFT_QUICKSAND = registerBlock("soft_quicksand", () -> new FlowingQuicksandBase(baseFlowingBehavior, new QuicksandBehavior()));
