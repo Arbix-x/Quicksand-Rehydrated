@@ -67,6 +67,7 @@
   "item.qsrehydrated.mucus_bucket": "Mucus Bucket",
   "block.qsrehydrated.tar": "Tar",
   "item.qsrehydrated.tar_bucket": "Tar Bucket",
+  "block.qsrehydrated.cheese": "Melted Cheese",
   "block.qsrehydrated.acid": "Acid",
   "item.qsrehydrated.acid_bucket": "Acid Bucket",
   "block.qsrehydrated.liquid_honey": "Liquid Honey",
@@ -131,6 +132,8 @@
 
   "death.attack.qsrehydrated_moor": "%1$s mistook the moor for solid ground",
   "death.attack.qsrehydrated_tar": "%1$s will make for a fine fossil",
+
+  "death.attack.qsrehydrated_cheese": "%1$s enjoys the finer things in life",
 
   "death.attack.qsrehydrated_flesh": "%1$s was swallowed by tentacles",
   "death.attack.qsrehydrated_soulsand": "%1$s felt the corrupting influence of the soul sand",
